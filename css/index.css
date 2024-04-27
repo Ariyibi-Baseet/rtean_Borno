@@ -4,6 +4,10 @@ body {
   position: inherit;
   overflow-x: hidden;
 }
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
 
 .box {
   margin-top: 100px;
