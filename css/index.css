@@ -4,28 +4,42 @@ body {
   position: inherit;
   overflow-x: hidden;
 }
+
+.box {
+  margin-top: 100px;
+}
 .preloader {
   position: absolute;
   width: 100%;
   height: 100vh;
   background-color: #4c4c4c;
   z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  opacity: 1;
+  transition: 1s ease-in-out;
 }
 
 .preloader h2 {
   font-family: "Poppins", sans-serif;
 }
 
-.state-chairman-img,
-.rtean-logo_,
-.governor-img {
+.animate-preloader {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.image-wrapper {
+  max-width: 950px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-wrapper > img {
   width: 300px;
-  height: 100%;
+  height: 300px;
   border-radius: 10px;
-  border: 4px solid black;
+  border: 4px solid white;
   object-fit: cover;
 }
 .governor-img {
@@ -34,19 +48,60 @@ body {
 
 .image-box {
   height: 300px;
-  /* border: 2px solid black; */
 }
-
-/* .rtean-logo_ {
-  width: 300px;
-  border-radius: 10px;
-  border: 4px solid black;
-} */
 
 .navbar {
   background-color: #fff;
-  /* box-shadow: 3px 4px 10px rgb(224, 221, 221); */
 }
 .rtean-logo {
   width: 80px;
 }
+
+@media screen and (max-width: 977px) {
+  .image-wrapper {
+    max-width: 800px;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .image-wrapper > img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    border: 4px solid black;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image-wrapper {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .image-wrapper > img {
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    border: 4px solid black;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+}
+
+.chairman-remark-box {
+  margin-top: 100px;
+}
+.chairman-remark-img {
+  width: 90%;
+  height: 370px;
+  border: 3px solid white;
+  object-fit: cover;
+  margin-top: 60px;
+}
+
+/* main p {
+  float: left;
+} */

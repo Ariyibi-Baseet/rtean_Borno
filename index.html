@@ -28,33 +28,27 @@
     <!-- PRELOADER SECTIONS STARTS HERE -->
     <div class="preloader">
       <div class="box">
-        <h2 class="text-white text-center mb-5">
-          Welcome to RTEAN | BORNO CHAPTER
+        <h2 class="text-white text-center mb-5 mt-5">
+          Welcome to the Home of Peace
         </h2>
-        <div class="">
-          <div class="row">
-            <div class="col image-box">
-              <img
-                src="./images/bishara.jpg"
-                alt=""
-                class="state-chairman-img animate__animated animate__slow animate__fadeInLeft"
-              />
-            </div>
-            <div class="col image-box">
-              <img
-                src="./images/rtean-logo.jpg"
-                alt=""
-                class="rtean-logo_ animate__animated animate__slow animate__fadeInUp"
-              />
-            </div>
-            <div class="col image-box">
-              <img
-                src="./images/governor01.jpg"
-                alt=""
-                class="governor-img animate__animated animate__slow animate__fadeInRight"
-              />
-            </div>
-          </div>
+        <div class="image-wrapper">
+          <img
+            src="./images/governor01.jpg"
+            alt=""
+            class="governor-img animate__animated animate__slow animate__fadeInRight"
+          />
+
+          <img
+            src="./images/rtean-logo.jpg"
+            alt=""
+            class="rtean-logo_ animate__animated animate__slow animate__fadeInUp"
+          />
+
+          <img
+            src="./images/bishara.jpg"
+            alt=""
+            class="state-chairman-img animate__animated animate__slow animate__fadeInLeft"
+          />
         </div>
       </div>
     </div>
@@ -111,10 +105,75 @@
       </div>
     </nav>
     <!-- ENDS HERE -->
+
+    <!-- MAIN BODY STARTS HERE -->
+    <main class="pb-5">
+      <div class="container chairman-remark-box">
+        <div class="row">
+          <div class="col-12 col-md-5 p-2">
+            <img
+              src="./images/bishara.jpg"
+              alt=""
+              class="chairman-remark-img animate__animated animate__pulse animate__infinite animate__slower"
+            />
+          </div>
+          <div class="col-12 col-md-7 p-2">
+            <h2 class="text-white fw-bold mb-3">Chairman Remarks</h2>
+            <p class="text-white">
+              WELCOME TO THE HOME OF PEACE. I wish to specially welcome you to
+              the official website of the Borno State Chapter of the Road
+              Transport Employers Association of Nigeria (RTEAN). We are not
+              just the movers of the Nation's Economy, we are also the foremost
+              transportation Union in the Federal Republic of Nigeria. Though
+              the main stay of Borno's Economy is Agriculture, particularly crop
+              and livestock farming, since the commencement of our operations in
+              this state in 19.........., we have played fundamental roles in
+              the development of the state, providing comfortable, safe,
+              reliable and efficient means of mobility to all and sundry, to and
+              fro every part of Borno State -- the Home of Peace while ensuring
+              a stable means of livelihood to hundreds of people across the
+              nooks and crannies of the state. On this platform, we assure you
+              of an up-to-date information about our activities, our various
+              parks as well as our partnership with the Borno State Government
+              ably led by our visionary and performing Governor, His Excellency,
+              Prof Babangana Umara Zulum. In case of any complaints, suggestions
+              or enquiry, you can visit our office or call any of the telephone
+              lines herein provided. As you continue to navigate your way within
+              the state, to and from any part of the country, please be assured
+              that as your dependable partner in progress, we are set to safely
+              take you to your destination.
+              <br />
+              Once again, welcome to the Home of Peace. UP Road! Super UP Road!!
+              Maturity UP UP Road!! Unity and Progress.
+              <br />
+              Sincerely Yours
+              <br />
+              Ambassador Muhammad Abubakar Bishara Chairman, RTEAN,Borno State
+              Branch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ENDS HERE -->
+
+    <!-- FOOTER SECTION STARTS HERE -->
+    <footer></footer>
+    <!-- ENDS HERE -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const preloader = document.querySelector(".preloader");
+      window.addEventListener("load", () => {
+        document.body.style.overflowY = "scroll";
+        setTimeout(() => {
+          preloader.classList.add("animate-preloader");
+        }, 3000);
+      });
+    </script>
   </body>
 </html>
