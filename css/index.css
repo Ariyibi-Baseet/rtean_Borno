@@ -109,3 +109,32 @@ body {
 /* main p {
   float: left;
 } */
+
+footer {
+  background-color: #000;
+}
+
+.footer-block {
+  padding: 30px 0 70px 0;
+}
+
+.about-rtean-footer {
+  color: #acacac;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #acacac;
+}
+
+.footer-down-data {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
